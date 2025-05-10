@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JASON'S WEBSITE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d5dadb;
+    }
+    header, footer {
+      background-color: #d5dadb;
+      color: #202121;
+      padding: 1em;
+      text-align: center;
+    }
+    main {
+      padding: 2em;
+      text-align: center;
+    }
+    /* Spinning and zoom-out animation */
+    @keyframes spinZoomOut {
+      0% {
+        transform: rotate(90deg) scale(1); /* Start from 90 degrees and normal size */
+      }
+      50% {
+        transform: rotate(540deg) scale(1.5); /* Halfway through, spin 1.5 rotations and zoom in */
+      }
+      100% {
+        transform: rotate(720deg) scale(0.7); /* Finish at 2 full rotations and zoom out */
+      }
+    }
+    img {
+      width: 250px;
+      animation: spinZoomOut 2s ease-in-out 1; /* 2 seconds duration, ease in-out, run only once */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WELCOME TO JASON'S WEBSITE</h1>
+  </header>
+
+  <div style="text-align: center;">
+    <img src="jimmy-fallon.gif" alt="Jimmy Fallon gif">
+  </div>
+
+  <main>
+    <p>JASON'S WEBSITE</p>
+  </main>
+  <footer>
+    <p>&copy;JASON 2025</p>
+  </footer>
+</body>
+</html>
